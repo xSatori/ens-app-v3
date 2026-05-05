@@ -17,6 +17,7 @@ import {
 } from '@ensdomains/thorin'
 
 import { NetworkNotifications } from '@app/components/@molecules/NetworkNotifications/NetworkNotifications'
+import { MiniAppInitializer } from '@app/components/MiniAppInitializer'
 import { TestnetWarning } from '@app/components/TestnetWarning'
 import { TransactionNotifications } from '@app/components/TransactionNotifications'
 import { TransactionStoreProvider } from '@app/hooks/transactions/TransactionStoreContext'
@@ -178,6 +179,7 @@ const AppWithThorin = ({ Component, pageProps }: Omit<AppPropsWithLayout, 'route
                   <TransactionFlowProvider>
                     <SyncDroppedTransaction>
                       <NetworkNotifications />
+                      <MiniAppInitializer />
                       <TransactionNotifications />
                       <TestnetWarning />
                       <Basic>{getLayout(<Component {...pageProps} />)}</Basic>

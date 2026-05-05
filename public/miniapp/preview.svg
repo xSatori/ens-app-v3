@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F7F7F7"/>
+  <rect x="96" y="96" width="1008" height="608" rx="48" fill="white"/>
+  <path d="M393.864 296.536C391.296 292.056 384.704 292.056 382.136 296.536L286.332 463.719C283.785 468.163 287.082 473.667 292.196 473.5L484.804 467.195C489.918 467.027 492.855 461.321 490.145 456.972L393.864 296.536Z" fill="#5298FF"/>
+  <path d="M408.704 291.707C406.225 287.27 399.775 287.27 397.296 291.707L346.171 383.193C344.767 385.705 344.903 388.801 346.523 391.182L408.276 481.934C411.075 486.047 417.274 485.65 419.524 481.214L486.033 350.098C487.138 347.919 487.06 345.329 485.825 343.221L408.704 291.707Z" fill="#44BCF0"/>
+  <text x="600" y="326" text-anchor="middle" fill="#141416" font-family="Satoshi, Arial, sans-serif" font-size="92" font-weight="700">ENS</text>
+  <text x="600" y="418" text-anchor="middle" fill="#141416" font-family="Satoshi, Arial, sans-serif" font-size="52" font-weight="700">Set your primary name</text>
+  <text x="600" y="486" text-anchor="middle" fill="#5F6065" font-family="Satoshi, Arial, sans-serif" font-size="34">Use your Farcaster connected wallet in the ENS app</text>
+  <rect x="438" y="548" width="324" height="76" rx="38" fill="#5298FF"/>
+  <text x="600" y="598" text-anchor="middle" fill="white" font-family="Satoshi, Arial, sans-serif" font-size="30" font-weight="700">Open ENS</text>
+</svg>

@@ -68,7 +68,8 @@ const nextConfig = {
           headers: [
             {
               key: 'Content-Security-Policy',
-              value: "frame-ancestors 'self' https://app.safe.global;",
+              value:
+                "frame-ancestors 'self' https://app.safe.global https://farcaster.xyz https://*.farcaster.xyz https://warpcast.com https://*.warpcast.com;",
             },
           ],
         },
@@ -78,6 +79,10 @@ const nextConfig = {
   },
   async rewrites() {
     return [
+      {
+        source: '/.well-known/farcaster.json',
+        destination: '/api/farcaster-manifest',
+      },
       {
         source: '/legacyFavourites',
         destination: '/legacyfavourites',

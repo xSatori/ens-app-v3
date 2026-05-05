@@ -51,6 +51,9 @@ frameAncestors += 'frame-ancestors'
 frameAncestors += " 'self'"
 // allow safe wallet
 frameAncestors += ' https://app.safe.global'
+// allow Farcaster Mini App hosts
+frameAncestors += ' https://farcaster.xyz https://*.farcaster.xyz'
+frameAncestors += ' https://warpcast.com https://*.warpcast.com'
 // end frame-ancestors
 frameAncestors += ';'
 

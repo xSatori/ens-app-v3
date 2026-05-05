@@ -1,3 +1,4 @@
+import farcasterMiniApp from '@farcaster/miniapp-wagmi-connector'
 import { inAppWalletConnector } from '@thirdweb-dev/wagmi-adapter'
 import { createThirdwebClient, defineChain as thirdwebDefineChain } from 'thirdweb'
 import {
@@ -159,7 +160,7 @@ const chains = getChainsFromUrl().map((c) => ({
   },
 })) as unknown as readonly [SupportedChain, ...SupportedChain[]]
 
-const combinedConnectors = [unicornConnector, ...rainbowKitConnectors]
+const combinedConnectors = [farcasterMiniApp(), unicornConnector, ...rainbowKitConnectors]
 
 const wagmiConfig_ = createConfig({
   syncConnectedChain: false,

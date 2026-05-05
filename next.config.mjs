@@ -18,6 +18,10 @@ const babelIncludeRegexes = [
   /[\\/](strip-ansi|ansi-regex)[\\/]/,
 ]
 
+const farcasterHostedManifestUrl =
+  process.env.FARCASTER_HOSTED_MANIFEST_URL ||
+  'https://api.farcaster.xyz/miniapps/hosted-manifest/019df634-5f93-f5d3-0908-331571ce87c2'
+
 /**
  * @type {import('next').NextConfig}
  * */
@@ -77,12 +81,17 @@ const nextConfig = {
     }
     return []
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: '/.well-known/farcaster.json',
-        destination: '/api/farcaster-manifest',
+        destination: farcasterHostedManifestUrl,
+        permanent: false,
       },
+    ]
+  },
+  async rewrites() {
+    return [
       {
         source: '/legacyFavourites',
         destination: '/legacyfavourites',
